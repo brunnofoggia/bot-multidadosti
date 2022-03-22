@@ -1,0 +1,17 @@
+{
+  "name": "robo-seastorm-multidados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "glob": "^7.2.0",
+    "lodash": "^4.17.21",
+    "prompt": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}

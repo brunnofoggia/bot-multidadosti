@@ -1,0 +1,59 @@
+idtabpreco: 11
+idbpo_proc: 
+idtask: 
+idtimecard: 
+lancto_ocorrencia: 
+lancto_cronometro: 
+lancto_cronometro_local: 
+lancto_servicos_oco: 
+idtimecard_scheduller: 4920
+idvendedor_form_lanctos: 181
+idcliente_form_lanctos: 221438
+idclienteprojeto_form_lanctos: 151
+data: 25/03/2022
+intervalor_total: 01:00
+idutbms_classe_setado: 4
+idtarefa_utbms: 77
+idatividade_utbms: 78
+tc_autorizacao_editar: F
+tc_apenas_lanca_cronometro: F
+hora: 09:00
+intervalo_hr_inicial: 12:00
+intervalo_hr_final: 13:00
+hora_fim: 18:00
+tempo_digitado: 08:00
+narrativa_principal: Atividade
+narrativa_secundaria: 
+fileToUpload_horas: 
+timecard[idtabpreco]: 11
+timecard[idbpo_proc]: 
+timecard[idtask]: 
+timecard[idtimecard]: 
+timecard[lancto_ocorrencia]: 
+timecard[lancto_cronometro]: 
+timecard[lancto_cronometro_local]: 
+timecard[lancto_servicos_oco]: 
+timecard[idtimecard_scheduller]: 4920
+timecard[idvendedor_form_lanctos]: 181
+timecard[idcliente_form_lanctos]: 221438
+timecard[idclienteprojeto_form_lanctos]: 151
+timecard[data]: 25/03/2022
+timecard[intervalor_total]: 01:00
+timecard[idutbms_classe_setado]: 4
+timecard[idtarefa_utbms]: 77
+timecard[idatividade_utbms]: 78
+timecard[tc_autorizacao_editar]: F
+timecard[tc_apenas_lanca_cronometro]: F
+timecard[hora]: 09:00
+timecard[intervalo_hr_inicial]: 12:00
+timecard[intervalo_hr_final]: 13:00
+timecard[hora_fim]: 18:00
+timecard[tempo_digitado]: 08:00
+timecard[narrativa_principal]: Atividade
+timecard[narrativa_secundaria]: 
+timecard[fileToUpload_horas]: 
+despesas: 
+servicos: 
+modulos_habilitados[timesheet]: T
+modulos_habilitados[despesas]: F
+modulos_habilitados[servicos]: 

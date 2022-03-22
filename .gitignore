@@ -1,0 +1,6 @@
+tmp
+nbproject
+node_modules
+*.zip
+~*
+.history
