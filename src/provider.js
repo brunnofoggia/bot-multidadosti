@@ -1,37 +1,60 @@
 import axios from "axios";
 
+const HOST = 'https://seastorm.multidadosti.com.br';
+
+function getConfig(options) {
+	return {
+		headers: {
+			"Content-Type": "application/x-www-form-urlencoded",
+			cookie: options.cookie,
+			authority: "seastorm.multidadosti.com.br",
+			scheme: "https",
+		},
+	};
+}
+
+async function checkCookie(cookie) {
+	if (!cookie) {
+		console.error("\nInforme o cookie no .env");
+		return false;
+	}
+
+	try {
+		console.log('Checando cookie');
+		const url = HOST + "/timesheet/multidados/module/calendario/index.php";
+		const config = getConfig({ cookie });
+
+		const { data, status } = await axios.post(url, null, config);
+		// console.log('check cookie response - ', data, data.length, status);
+		if (!/login/.test(data)) {
+			console.log('Cookie válido');
+			return true;
+		}
+	} catch (err) {
+		// console.log('check cookie error - ', err);
+	}
+	console.log('Cookie inválido');
+	return false;
+}
+
 async function insertData(formData, options) {
 	try {
-		const url =
-			"https://seastorm.multidadosti.com.br/includes/ajax_calls/saveLanctos.ajax.php";
-
-		const config = {
-			headers: {
-				"Content-Type": "application/x-www-form-urlencoded",
-				cookie: options.cookie,
-				authority: "seastorm.multidadosti.com.br",
-				scheme: "https",
-			},
-		};
-
-		console.info(`Date ${formData.get('data')} is going to be saved`);
-		// console.info(JSON.stringify(config.headers.cookie), `cookie`);
+		const url = HOST + "/includes/ajax_calls/saveLanctos.ajax.php";
+		const config = getConfig(options);
 
 		setTimeout(async () => {
+			console.log(formData.get('data'), 'enviando dados');
 			const { data } = await axios.post(url, formData, config);
 			if (data.sucesso === "T" && data.id_lancto_atividade != "") {
-				console.info(
-					`Date ${formData.get('data')} was saved`
-				);
+				console.log(formData.get('data'), 'tarefa salva');
 			} else {
-				console.error(`Error with date ${formData.get('data')}: ${data.msg}`);
+				console.log(formData.get('data'), 'problema encontrado', data.msg);
 			}
 		}, options.timeout);
 		// console.info(JSON.stringify(data), `retorno`);
 	} catch (error) {
-		console.error(`Error while trying to insert date ${formData.get('data')}. Error:`);
-		console.error(error);
+		console.log(formData.get('data'), 'falha ao processar', error);
 	}
 }
 
-export { insertData };
+export { checkCookie, insertData };
