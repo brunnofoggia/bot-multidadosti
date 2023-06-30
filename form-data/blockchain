@@ -6,10 +6,10 @@ lancto_ocorrencia:
 lancto_cronometro: 
 lancto_cronometro_local: 
 lancto_servicos_oco: 
-idtimecard_scheduller: 33456
-idvendedor_form_lanctos: 506
-idcliente_form_lanctos: 367604
-idclienteprojeto_form_lanctos: 288
+idtimecard_scheduller: 63300
+idvendedor_form_lanctos: 181
+idcliente_form_lanctos: 221438
+idclienteprojeto_form_lanctos: 345
 data: 06/06/2022
 intervalor_total: 01:00
 idutbms_classe_setado: 4
@@ -33,10 +33,10 @@ timecard[lancto_ocorrencia]:
 timecard[lancto_cronometro]: 
 timecard[lancto_cronometro_local]: 
 timecard[lancto_servicos_oco]: 
-timecard[idtimecard_scheduller]: 33456
-timecard[idvendedor_form_lanctos]: 506
-timecard[idcliente_form_lanctos]: 367604
-timecard[idclienteprojeto_form_lanctos]: 288
+timecard[idtimecard_scheduller]: 63300
+timecard[idvendedor_form_lanctos]: 181
+timecard[idcliente_form_lanctos]: 221438
+timecard[idclienteprojeto_form_lanctos]: 345
 timecard[data]: 06/06/2022
 timecard[intervalor_total]: 01:00
 timecard[idutbms_classe_setado]: 4
